@@ -21,10 +21,6 @@ Em seguida execute:
 
 ### Migrations
 
-Criando a tabela de migration dentro da database do modulo:
-
-> php artisan migrate:install --database="database_conn_mysql"
-
 Execute o comando para rodar as migrations do projeto:
 
 > php artisan migrate --database="database_conn_mysql" --path=vendor/danganf/basic-structure-module/src/app/Database/Migration
