@@ -4,6 +4,7 @@ namespace BasicStructeMod;
 use App\Http\Kernel;
 use BasicStructeMod\Console\BasicCommand;
 use BasicStructeMod\Middleware\BasicMiddleware;
+use Illuminate\Console\Scheduling\Schedule;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -46,6 +47,12 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
         #CARREGANDO TRADUCOES
         $this->loadTranslationsFrom(__DIR__.'/translations', 'Basiclang');
+        
+        #ADD COMMAND KERNEL queue:run
+        $this->app->booted(function () {
+            $schedule = $this->app->make(Schedule::class);
+            $schedule->command('COMMAND_NAME:BASIC')->everyMinute()->withoutOverlapping();
+        });
     }
 
     protected function registerMiddleware($name, $middleware)
