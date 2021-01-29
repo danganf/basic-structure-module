@@ -1,16 +1,16 @@
 <?php
 
-namespace BasicStructeMod\Console;
+namespace SDKBlank\Console;
 
 use Carbon\Carbon;
 
 /**
  * Class OrderIntegrationCommand
- * @package BasicStructeMod\Console
+ * @package SDKBlank\Console
  */
 class BasicCommand extends Command
 {
-    protected $name        = 'BasicStructeMod:console-name';
+    protected $name        = 'SDKBlank:console-name';
     protected $description = 'Description';
 
     public function __construct()

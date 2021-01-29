@@ -1,6 +1,6 @@
 <?php
 
-namespace BasicStructeMod\Controllers;
+namespace SDKBlank\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;

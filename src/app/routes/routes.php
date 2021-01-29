@@ -19,7 +19,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::namespace('\BasicStructeMod\Controllers')->middleware(['api','basic-middle'])->group(function () {
+Route::namespace('\SDKBlank\Controllers')->middleware(['api','basic-middle'])->group(function () {
 
     Route::prefix('basic-route')->name('basic-route.')->group(function () {
         Route::get('/basic', 'BasicController@getBasic' )->name('get.basic');

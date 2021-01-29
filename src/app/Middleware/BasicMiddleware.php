@@ -1,6 +1,6 @@
 <?php
 
-namespace BasicStructeMod\Middleware;
+namespace SDKBlank\Middleware;
 
 use Illuminate\Support\Facades\App;
 

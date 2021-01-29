@@ -1,6 +1,6 @@
 <?php
 
-namespace BasicStructeMod\Jobs;
+namespace SDKBlank\Jobs;
 
 use Carbon\Carbon;
 use Illuminate\Bus\Queueable;

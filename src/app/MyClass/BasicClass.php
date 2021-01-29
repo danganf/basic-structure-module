@@ -1,6 +1,6 @@
 <?php
 
-namespace BasicStructeMod\MyClass;
+namespace SDKBlank\MyClass;
 
 use Illuminate\Support\Facades\App;
 

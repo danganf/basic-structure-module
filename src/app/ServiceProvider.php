@@ -1,9 +1,9 @@
 <?php
-namespace BasicStructeMod;
+namespace SDKBlank;
 
 use App\Http\Kernel;
-use BasicStructeMod\Console\BasicCommand;
-use BasicStructeMod\Middleware\BasicMiddleware;
+use SDKBlank\Console\BasicCommand;
+use SDKBlank\Middleware\BasicMiddleware;
 use Illuminate\Console\Scheduling\Schedule;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
@@ -27,7 +27,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
 
         #FACADES
-        $app->alias('BasicFacades', 'BasicStructeMod\Facades\BasicFacades');
+        $app->alias('BasicFacades', 'SDKBlank\Facades\BasicFacades');
 
         #CONSOLE
         $this->commands([
@@ -35,7 +35,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         ]);
 
         $this->app->singleton('MyCript', function () {
-            return $this->app->make('BasicStructeMod\App\MyClass\MyCript');
+            return $this->app->make('SDKBlank\App\MyClass\MyCript');
         });
 
     }

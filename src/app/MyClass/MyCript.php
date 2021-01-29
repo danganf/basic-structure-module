@@ -1,6 +1,6 @@
 <?php
 
-namespace BasicStructeMod\MyClass;
+namespace SDKBlank\MyClass;
 
 class MyCript
 {

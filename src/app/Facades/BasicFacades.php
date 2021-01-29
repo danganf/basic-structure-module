@@ -1,5 +1,5 @@
 <?php
-namespace BasicStructeMod\Facades;
+namespace SDKBlank\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -16,6 +16,6 @@ class BasicFacades extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'BasicStructeMod\MyClass\BasicClass';
+        return 'SDKBlank\MyClass\BasicClass';
     }
 }
